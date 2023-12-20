@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./reg icon.png" type="image/x-icon">
+    <title>Register</title>
+    <style>
+        .container
+        {
+            height: 90vh;
+            width: 90%;
+            background-color: #dcdcdc;
+            position: relative;
+            top: 3vh;
+            left: 5%;
+            border-radius: 15px;
+        }
+        h2
+        {
+            text-align: center;
+            position: relative;
+            top: 2vh;
+        }
+        hr
+        {
+            width: 80%;
+        }
+        form
+        {
+            text-align: center;
+            
+        }
+        input
+        {
+            height: 6vh;
+            border-radius: 0px 5px 5px 0px;
+            border: none;
+            box-shadow: 1px 1px 1px rgb(79, 103, 136);
+        }
+        /* input:active
+        {
+            border: none;
+        } */
+        span
+        {
+            
+            color: rgb(33, 111, 200);
+            background-color: #fff;
+            padding: 17px;
+            border-radius: 5px 0px 0px 5px;
+            position: relative;
+            /* left: 65%; */
+            top: 1.4px;
+        }
+        .span
+        {
+            
+            color: rgb(33, 111, 200);
+            background-color: #fff;
+            padding: 17px;
+            border-radius: 5px 0px 0px 5px;
+            position: relative;
+            /* left: 65%; */
+            top: 1.3px;
+        }
+      
+        button
+        {
+            height: 6vh;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color:rgb(33, 111, 200) ;
+        }
+        #a
+        {
+            text-decoration: none;
+        }
+        .a{
+            box-shadow: none;
+            position: relative;
+            top: 2vh;
+        }
+        @media screen and(min-width:360px) and (max-width:768px) {
+            .container
+            {
+                width: 100%;
+                background-color: aqua;
+            }
+        span
+        {
+            
+            color: rgb(33, 111, 200);
+            background-color: #fff;
+            padding: 40px;
+            margin: 15px;
+            border-radius: 5px 0px 0px 5px;
+            position: relative;
+            /* left: 65%; */
+            top: 1.4px;
+        }
+        }
+        @media screen and (min-width:768px) {
+            .container
+            {
+                width: 30%;
+                position: relative;
+                left: 35%;
+                background-color: rgb(158, 194, 219);
+            }
+            span
+        {
+            
+            color: rgb(33, 111, 200);
+            background-color: #fff;
+            padding: 12px;
+            border-radius: 5px 0px 0px 5px;
+            position: relative;
+            /* left: 65%; */
+            top: 1.4px;
+        }
+        .span
+        {
+            
+            color: rgb(33, 111, 200);
+            background-color: #fff;
+            padding: 12px;
+            border-radius: 5px 0px 0px 5px;
+            position: relative;
+            /* left: 65%; */
+            top: 1.3px;
+        }
+
+        }
+        img
+        {
+            height: 4vh;
+            position: relative;
+            top: 1vh;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <h2>
+                Registration
+            </h2><hr>
+        </div>
+        <div class="row2">
+            <form action="./login.html">
+                <input class="a" type="radio" name="per" id="per">
+                <label id="b" for="per">Personal</label> 
+                <input class="a" type="radio" name="per" id="pro">
+                <label id="b" for="pro">Professional</label><br><br>
+                
+                <hr>
+                
+                <span class="span"><img src="./email.png" alt=""></span><input type="email" name="" id="" placeholder="Email" required><br><br>
+                   <!-- <input type="text" name="" id="" placeholder="Name"><br><br> -->
+                   <span><img src="./call.jpg" alt=""></span><input type="text" name="" id="" placeholder="Mobile"><br><br>
+                   <span><img src="./password.png" alt=""></span><input type="password" name="" id="" placeholder="password"><br><br>
+                   <hr>
+
+                   <input class="a" type="radio" name="gender" id="">
+                   <label id="b" for="">Male</label> 
+                   <input class="a" type="radio" name="gender" id="">
+                   <label id="b" for="">Female</label>
+                  
+
+                   <p>by clicking <a id="a" href="#">Register</a>, you agree on our <a href="#">Privacy policy</a></p>
+                   <a href="./login.html">Already have an account</a>
+                <hr><br>
+                   <button>Submit</button>
+
+              
+            </form>
+        </div>
+    </div>
+</body>
+</html>

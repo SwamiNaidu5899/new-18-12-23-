@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(41, 153, 181);
+        }
+        .row1
+        {
+            height:64vh;
+            width: 60%;
+            background-color: rgba(255, 255, 255, 0.225);
+            position: relative;
+            top: 18vh;
+            left: 18%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+            border-radius: 5px;
+        }
+        .col
+        {
+            height: 80vh;
+            width: 49%;
+            background-color: #ffffffeb;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: relative;
+            border-radius: 5px;
+            top: -8vh;
+            left: 5%;
+        }
+        input
+        {
+            color: rgb(3, 0, 0);
+            width: 60%;
+            height: 9vh;
+            position: relative;
+            border-radius: 15px;
+            top: 20vh;
+            left: 20%;
+            border: none;
+        }
+        input:hover
+        {
+            background-color: rgba(82, 136, 181, 0.181);
+            width: 80%;
+            position: relative;
+            left: 10%;
+
+        }
+        ::placeholder
+        {
+            text-align: center;
+            color: rgb(90, 117, 205);
+        }
+        button
+        {
+            position: relative;
+            top: 28vh;
+            left: 35%;
+            /* height: 8vh; */
+            width: 30%;
+            padding: 15px;
+            background-color: rgb(203, 13, 133);
+            border-radius: 5px;
+            color: white;
+            border: none;
+        }
+        .col2
+        {
+            margin-left: 56%;
+            margin-top: -25vh;
+        }
+        .btn
+        {
+            position: relative;
+            left: 10%;
+            top: 5vh;
+            width: 20%;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        h2{
+            color: #ffffff;
+        }
+        button:active
+           {
+            text-decoration: underline;
+           }
+        @media screen and (min-width:368px) and (max-width:768px){
+            .container
+            {
+                background-color: #85c0c5;
+            }
+            .row1
+            {
+                height: 65vh;
+                width: 80%;
+                position: relative;
+                top: 15vh;
+                left: 10%;
+                background-color: rgba(255, 255, 255, 0.225);
+            }
+            .col
+            {
+                position: relative;
+                top: 5vh;
+                left: -5%;
+                height: 35vh;
+                width: 110%;
+            }
+            .col2
+            {
+                position: relative;
+                top: 18vh;
+                left: -20%;
+            }
+            
+            .btn
+            {
+                width: 55%;
+                position: relative;
+                top: 2vh;
+                left: 1%;
+                /* margin: 0; */
+                /* height: 8vh;  */
+            }
+            h2
+            {
+                /* width: 100%;/ */
+                text-align: center;
+                margin-left: -30%;
+            }
+            input
+            {
+                position: relative;
+                top: 2vh;
+                left: 18%;
+
+           }
+           button{
+            position: relative;
+            top: 4vh;
+            left: 33%;
+           }
+           button:active
+           {
+            text-decoration: underline;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+          <div class="col">
+            <form action="">
+                <input type="text" name="" id="" placeholder="User Name" required><br><br>
+                <input type="password" name="" id="" placeholder="Password" required><br>
+
+            <button formaction="./home.html">LogIn</button>
+            </form>
+          </div>
+        </div>
+        <div class="col2">
+            <h2>Don't have an account?</h2>
+           <a href="./index.html"> <button  class="btn">
+            SignUp
+        </button></a>
+        </div>
+    </div>
+</body>
+</html>
